@@ -7,11 +7,9 @@
 </head>
 <body>
 <header class="main-header">
-    <div class="main-header-logo-container">
         <a class="main-header-logo-link">
            <img src="#" class="main-header-logo" alt="Логотип сайта Седоны"/>
         </a>
-    </div>
     <nav class="main-nav">
       <ul class="main-nav-list">
           <li class="main-nav-list-item">
@@ -30,8 +28,6 @@
               </a>
           </li>
       </ul>
-    </nav>
-    <nav class="user-nav">
         <ul class="user-nav-list">
             <li class="user-nav-list-item">
                 <a class="nav-link active" href="#">
@@ -49,9 +45,7 @@
             </li>
             <li class="user-nav-list-item">
                 <a class="button nav-button" href="#">
-                    <span class="visually-hidden">
                     Хочу сюда
-                    </span>
                 </a>
             </li>
         </ul>
@@ -62,14 +56,14 @@
     <div class="hero-block-banner">
         <img src="#" alt="Welcome to the gorgeus Sedona. Because the Grand Canyon sucks" width="458" height="352">
     </div>
-    <div class="hero-block-content">
-        <h2 class="Sedona-title title">Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</h2>
-        <p class="Sedona-description description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-    </div>
+
   </section>
     <section class="advantages">
         <h2 class="visually-hidden">Преимущества города</h2>
+        <p class="Sedona-title title">Седона — небольшой городок в Аризоне,
+          заслуживающий большего!</p>
+        <p class="Sedona-description description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
         <ul class="advantages-list">
             <li class="advantages-item">
                 <h3 class="advantages-title">Настоящий городок</h3>
@@ -97,7 +91,7 @@
     </section>
     <section class="feauters">
         <h2 class="visually-hidden">Преимущества предложения этого туроператора</h2>
-        <h2 class="feauters-list-title title">Приезжайте в Седону отдохнуть в комфорте и уюте</h2>
+        <p class="feauters-list-title title">Приезжайте в Седону отдохнуть в комфорте и уюте</p>
         <p class="feauters-list-description description">Опытный персонал и качественное обслуживание</p>
         <ul class="feauters-list">
             <li class="feauters-item">
@@ -126,6 +120,9 @@
       <h2 class="newsletter-title title">Подпишитесь на рассылку</h2>
       <p class="newsletter-description description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
       <form class="newsletter-form form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="newsletter-email" class="visually-hidden">
+          Подписка на рассылку
+        </label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
              Подписаться
@@ -135,6 +132,7 @@
 </main>
 <footer class="footer">
    <section class="footer-social-media">
+     <h2 class="visually-hidden">Социальные сети</h2>
        <ul class="social-media-list">
            <li class="social-media-item">
                <a class="social-media-item-link vk" href="https://vk.com/htmlacademy">
@@ -160,9 +158,11 @@
        </ul>
    </section>
    <section class="footer-contacts">
+     <h2 class="visually-hidden">Блок контактов</h2>
        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
    </section>
    <section class="footer-copyright">
+     <h2 class="visually-hidden">Копирайт</h2>
        <a class="copyright" href="https://htmlacademy.ru/">
            <img src="#" class="htmlacademylogo" alt="Логотип HTML Academy"/>
        </a>

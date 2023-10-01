@@ -6,11 +6,9 @@
 </head>
 <body>
 <header class="main-header">
-  <div class="main-header-logo-container">
     <a class="main-header-logo-link">
-      <img src="#" class="main-header-logo" alt="Логотип сайта Седоны"/>
+      <img src="#" class="main-header-logo" alt="Логотип сайта Седоны" href="index.html"/>
     </a>
-  </div>
   <nav class="main-nav">
     <ul class="main-nav-list">
       <li class="main-nav-list-item">
@@ -24,13 +22,11 @@
         </a>
       </li>
       <li class="main-nav-list-item">
-        <a class="nav-link current-link" href="catalog.html">
+        <a class="nav-link current-link" href="#">
           Гостиницы
         </a>
       </li>
     </ul>
-  </nav>
-  <nav class="user-nav">
     <ul class="user-nav-list">
       <li class="user-nav-list-item">
         <a class="nav-link active" href="#">
@@ -48,27 +44,31 @@
       </li>
       <li class="user-nav-list-item">
         <a class="button nav-button" href="#">
-                    <span class="visually-hidden">
                     Хочу сюда
-                    </span>
         </a>
       </li>
     </ul>
   </nav>
 </header>
 <main class="main">
-  <section class="searching-section">
+  <div class="searching-section">
+    <header class="breadcrumbs-section">
     <h1 class="inner-header-title hotels-page-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link" href="index.html">
-          <img src="#" alt="Главная страница" class="breadcrumbs-icon">
+          <span class="breadcrumbs-icon visually-hidden">
+            Главная страница
+          </span>
         </a>
       </li>
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link">Гостиницы</a>
       </li>
     </ul>
+    </header>
+    <section class="hotels-searching-form">
+      <h2 class="visually-hidden">Форма поиска отелей</h2>
     <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="hotelsfeauters-filter-group">
         <legend class="hotels-filter-title">Инфраструктура</legend>
@@ -115,8 +115,10 @@
             </label>
           </li>
         </ul>
+      </fieldset>
+      <fieldset class="price">
         <div class="pricechoise">
-          <span class="range pricechoise">Стоимость, ₽</span>
+          <legend class="range pricechoise">Стоимость, ₽</legend>
           <div class="range-min-wrapper">
             <label for="range-min">от</label>
             <input type="text" id="range-min" name="range-min" pattern="\d" value="0">
@@ -127,14 +129,18 @@
           </div>
         </div>
       </fieldset>
+      <div class="button-set"
       <button class="agreement-button button" type="submit">
         Применить
       </button>
       <button class="reset-button button" type="reset">
         Сбросить
       </button>
+      </div>
     </form>
-  </section>
+    </section>
+  </div>
+
   <section class="catalog-hotels-founded">
     <h2 class="visually-hidden">Список гостиниц по фильтрам</h2>
     <span class="founded">Найдено гостиниц: 38</span>
@@ -227,6 +233,9 @@
     <h2 class="newsletter-title title">Подпишитесь на рассылку</h2>
     <p class="newsletter-description description">Только полезная информация и никакого спама, <br> честное
       бойскаутское!</p>
+    <label for="newsletter-email" class="visually-hidden">
+      Подписка на рассылку
+    </label>
     <form class="newsletter-form form" action="https://echo.htmlacademy.ru/" method="post">
       <input class="field" placeholder="Ваш e-mail" type="email" name="email" id="newsletter-email" required>
       <button class="button newsletter-button" type="submit">
@@ -237,6 +246,7 @@
 </main>
 <footer class="footer">
   <section class="footer-social-media">
+    <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="social-media-list">
       <li class="social-media-item">
         <a class="social-media-item-link vk" href="https://vk.com/htmlacademy">
@@ -262,9 +272,11 @@
     </ul>
   </section>
   <section class="footer-contacts">
+    <h2 class="visually-hidden">Блок контактов</h2>
     <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
   </section>
   <section class="footer-copyright">
+    <h2 class="visually-hidden">Копирайт</h2>
     <a class="copyright" href="https://htmlacademy.ru/">
       <img src="#" class="htmlacademylogo" alt="Логотип HTML Academy"/>
     </a>
