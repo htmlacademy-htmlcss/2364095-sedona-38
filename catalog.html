@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Гостиницы Седоны</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="main-header">
@@ -44,7 +45,7 @@
       </li>
       <li class="user-nav-list-item">
         <a class="button nav-button" href="#">
-          Хочу сюда
+          Хочу сюда!
         </a>
       </li>
     </ul>
@@ -70,22 +71,22 @@
     <section class="hotels-searching-form">
       <h2 class="visually-hidden">Форма поиска отелей</h2>
       <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="hotelsfeauters-filter-group">
+        <fieldset class="hotelsfeatures-filter-group">
           <legend class="hotels-filter-title">Инфраструктура</legend>
-          <ul class="hotelsfeauters-filter-list">
-            <li class="hotelsfeauters-filter-item checkbox">
+          <ul class="hotelsfeatures-filter-list">
+            <li class="hotelsfeatures-filter-item checkbox">
               <label class="control">
                 <input class="control-input" type="checkbox" id="swimming-pool" name="swimming-pool" checked>
                 Бассейн
               </label>
             </li>
-            <li class="hotelsfeauters-filter-item checkbox">
+            <li class="hotelsfeatures-filter-item checkbox">
               <label class="control">
                 <input class="control-input" type="checkbox" id="parking" name="parking" checked>
                 Парковка
               </label>
             </li>
-            <li class="hotelsfeauters-filter-item checkbox">
+            <li class="hotelsfeatures-filter-item checkbox">
               <label class="control">
                 <input class="control-input" type="checkbox" id="wifi" name="wifi">
                 Wi-Fi
@@ -120,12 +121,12 @@
           <legend class="range pricechoise">Стоимость, ₽</legend>
           <div class="pricechoise">
             <div class="range-min-wrapper">
-              <label for="range-min">от</label>
-              <input type="text" id="range-min" name="range-min" pattern="\d" value="0">
+              <label for="range-min" class="range-label">от</label>
+              <input type="text" id="range-min" name="range-min" class="range-input" pattern="\d" value="0">
             </div>
             <div class="range-max-wrapper">
-              <label for="range-max">до</label>
-              <input type="text" id="range-max" name="range-max" pattern="\d" value="9000">
+              <label for="range-max" class="range-label">до</label>
+              <input type="text" id="range-max" name="range-max" class="range-input" pattern="\d" value="9000">
             </div>
           </div>
         </fieldset>
@@ -142,8 +143,7 @@
   </div>
 
   <section class="catalog-hotels-founded">
-    <h2 class="visually-hidden">Список гостиниц по фильтрам</h2>
-    <span class="founded">Найдено гостиниц: 38</span>
+    <h2 class="founded-title title">Найдено гостиниц: 38</h2>
     <select class="select-control" aria-label="Сортировка">
       <option value="popular">Сначала популярные</option>
       <option value="cheap" selected>Сначала дешёвые</option>
@@ -161,7 +161,8 @@
     <ul class="hotels-list">
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image" src="images/amara-hotel.jpg" alt="Пещера рядом с гостиницей" width="300" height="212"/>
+          <img class="hotel-card-image" src="images/amara-hotel.jpg" alt="Пещера рядом с гостиницей" width="300"
+               height="212"/>
           <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           <span class="hotel-card-type">Гостиница</span>
         </a>
@@ -185,7 +186,8 @@
       </li>
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image" src="images/desert-hotel.jpg" alt="Пейзаж с горами и лесом" width="300" height="212">
+          <img class="hotel-card-image" src="images/desert-hotel.jpg" alt="Пейзаж с горами и лесом" width="300"
+               height="212">
           <h3 class="hotel-card-title">Desert Quail Inn</h3>
           <span class="hotel-card-type">Гостиница</span>
         </a>
@@ -197,7 +199,8 @@
       </li>
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image" src="images/green-tree-hotel.jpg" alt="Ночной пустынный пейзаж" width="300" height="212">
+          <img class="hotel-card-image" src="images/green-tree-hotel.jpg" alt="Ночной пустынный пейзаж" width="300"
+               height="212">
           <h3 class="hotel-card-title">GreenTree Inn</h3>
           <span class="hotel-card-type">Гостиница</span>
         </a>
