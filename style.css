@@ -68,6 +68,24 @@ body {
   border-radius: 4px;
 }
 
+.button:hover,
+.button:focus {
+  background-color: #615048;
+  outline: none;
+}
+
+.button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.button:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+  outline: none;
+}
+
 .description {
   text-align: center;
   font-size: 22px;
@@ -161,6 +179,27 @@ body {
 .advantages-item {
   width: 400px;
   padding: 103px 85px;
+}
+
+.advantages-title {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.advantages-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.30);
+}
+
+.advantages-item:first-of-type .advantages-title::after,
+.advantages-item:last-of-type .advantages-title::after {
+  background: rgba(255, 255, 255, 0.30);
 }
 
 .advantages-item:first-of-type .advantages-title,
@@ -266,8 +305,33 @@ body {
 }
 
 .features-item {
+  position: relative;
   width: 400px;
-  padding: 80px 85px;
+  padding: 182px 85px 80px;
+}
+
+.features-item::after {
+  content: '';
+  width: 75px;
+  height: 77px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.living::after {
+  background-image: url("/images/living.svg");
+}
+
+.food::after {
+  background-image: url("/images/food.svg");
+}
+
+.gifts::after {
+  background-image: url("/images/gifts.svg");
 }
 
 .features-item:nth-of-type(odd) {
@@ -436,6 +500,22 @@ ul {
   background-image: url('/images/select-arrow.svg');
   background-position: 258px center;
   background-repeat: no-repeat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+.select-control:hover,
+.select-control:focus {
+  outline: 2px solid #68A2CA;
+}
+
+.select-control:disabled {
+  outline: 2px solid rgba(0, 0, 0, 0.30);
+  color: rgba(0, 0, 0, 0.30);
+  background-image: url('/images/select-arrow-disabled.svg');
 }
 
 .searching-section {
@@ -529,7 +609,9 @@ ul {
   width: 143px;
   padding: 12px 20px;
   border: none;
+  outline: none;
 }
+
 
 .range-input-min {
   border-radius: 4px 0 0 4px;
@@ -724,13 +806,6 @@ label {
   background-color: #F2F2F2;
 }
 
-.select-control {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  color: #333333;
-}
 
 .main-nav-list-item {
   font-size: 20px;
@@ -836,6 +911,19 @@ label {
   line-height: 24px;
 }
 
+.modal-form-input:hover,
+.modal-form-input:focus,
+.field:hover,
+.field:focus {
+  background-color: #E6E6E6;
+}
+
+.modal-form-input:focus,
+.field:focus {
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+}
+
 .arrival-label,
 .departure-label {
   position: relative;
@@ -860,6 +948,59 @@ label {
   width: 100%;
   background-color: #83B3D3;
   border-radius: 10px;
+}
+
+.modal-form-button-submit:hover,
+.modal-form-button-submit:focus,
+.newsletter-button:hover,
+.newsletter-button:focus,
+.agreement-button:hover,
+.agreement-button:focus,
+.fav-card-button:hover,
+.fav-card-button:focus {
+  background-color: #68A2CA;
+}
+
+.modal-form-button-submit:active,
+.newsletter-button:active,
+.agreement-button:active,
+.fav-card-button:active {
+  background-color: #82B3D3;
+  outline: none;
+}
+
+.button-selected:hover,
+.button-selected:focus {
+  background-color: #6C9E42;
+  outline: none;
+}
+
+.button-selected:active {
+  background-color: #7DB54F;
+  outline: none;
+}
+
+.reset-button:hover {
+  opacity: 0.6;
+  background-color: transparent;
+  outline: none;
+}
+
+.reset-button:focus {
+  opacity: 0.6;
+  background-color: transparent;
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+}
+
+.reset-button:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.reset-button:disabled {
+  opacity: 0.1;
+  outline: none;
 }
 
 .person {
@@ -1007,7 +1148,14 @@ label {
 
 .checkbox,
 .radio {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .checkbox-label:before {
@@ -1022,6 +1170,27 @@ label {
 .checkbox:checked ~ .checkbox-label:before {
   background: #FFFFFF url("/images/tick.svg") center center no-repeat;
 }
+
+.checkbox:checked ~ .checkbox-label:hover:before{
+opacity: 0.6;
+}
+
+.checkbox:checked ~ .checkbox-label:active:before {
+  opacity: 0.3;
+}
+
+.checkbox:checked ~ .checkbox-label:hover{
+  opacity: 0.6;
+}
+
+.checkbox:checked ~ .checkbox-label:active {
+  opacity: 0.3;
+}
+
+.checkbox:focus ~ .checkbox-label:before{
+  outline: 3px solid #83B3D3;
+}
+
 
 .radio-label:before {
   content: "";
