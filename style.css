@@ -443,6 +443,7 @@ body {
   background-color: #FFFFFF;
   align-items: center;
 }
+
 .footer-contacts {
   padding: 5px;
 }
@@ -485,20 +486,23 @@ a {
 }
 
 .phone:hover,
-.phone:focus{
+.phone:focus {
   outline: none;
   color: #756157;
 }
+
 .phone:active {
   outline: none;
   color: #756157;
   opacity: 0.3;
 }
+
 .copyright:hover,
-.copyright:focus{
+.copyright:focus {
   outline: none;
   color: #756157;
 }
+
 .copyright:active {
   outline: none;
   color: #756157;
@@ -565,10 +569,12 @@ ul {
   margin: 0 auto;
   padding: 35px 70px 70px;
 }
+
 .view-mode {
   display: flex;
   gap: 8px;
 }
+
 .view-button {
   width: 48px;
   height: 48px;
@@ -586,7 +592,7 @@ ul {
 
 .view-button.active,
 .view-button:active,
-.view-button:hover{
+.view-button:hover {
   outline-color: #000000;
 }
 
@@ -650,6 +656,7 @@ ul {
 .hotelstype-filter-group {
   min-width: 150px;
 }
+
 .range-label {
   position: absolute;
   right: 20px;
@@ -801,15 +808,19 @@ label {
 .hotel-level-stars-1::before {
   width: 24px;
 }
+
 .hotel-level-stars-2::before {
   width: 48px;
 }
+
 .hotel-level-stars-3::before {
   width: 72px;
 }
+
 .hotel-level-stars-4::before {
   width: 96px;
 }
+
 .hotel-level-stars-5::before {
   width: 120px;
 }
@@ -859,6 +870,7 @@ label {
   background-color: #82B3D3;
   border-radius: 4px;
 }
+
 .pagination-link:hover,
 .pagination-link:focus {
   background-color: #68A2CA;
@@ -874,8 +886,7 @@ label {
 .pagination-current,
 .pagination-current:hover,
 .pagination-current:focus,
-.pagination-current:active
-{
+.pagination-current:active {
   color: #000000;
   background-color: #F2F2F2;
 }
@@ -883,13 +894,10 @@ label {
 .pagination-link-range,
 .pagination-link-range:hover,
 .pagination-link-range:focus,
-.pagination-link-range:active
-{
+.pagination-link-range:active {
   color: #000000;
   background-color: transparent;
 }
-
-
 
 
 .hotels-page-title {
@@ -1138,17 +1146,17 @@ label {
   color: #000000;
 }
 
-.person-input-button:focus svg{
+.person-input-button:focus svg {
   outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
-.person-input-button:focus{
+.person-input-button:focus {
   outline: none;
 }
 
 .person-input-button:active svg {
-  outline:none;
+  outline: none;
 }
 
 .person-input-wrapper {
@@ -1311,15 +1319,15 @@ label {
   background: #FFFFFF url("/images/tick.svg") center center no-repeat;
 }
 
-.checkbox:checked ~ .checkbox-label:hover:before{
-opacity: 0.6;
+.checkbox:checked ~ .checkbox-label:hover:before {
+  opacity: 0.6;
 }
 
 .checkbox:checked ~ .checkbox-label:active:before {
   opacity: 0.3;
 }
 
-.checkbox:checked ~ .checkbox-label:hover{
+.checkbox:checked ~ .checkbox-label:hover {
   opacity: 0.6;
 }
 
@@ -1327,7 +1335,7 @@ opacity: 0.6;
   opacity: 0.3;
 }
 
-.checkbox ~ .checkbox-label:hover:before{
+.checkbox ~ .checkbox-label:hover:before {
   opacity: 0.6;
 }
 
@@ -1335,7 +1343,7 @@ opacity: 0.6;
   opacity: 0.3;
 }
 
-.checkbox ~ .checkbox-label:hover{
+.checkbox ~ .checkbox-label:hover {
   opacity: 0.6;
 }
 
@@ -1343,7 +1351,7 @@ opacity: 0.6;
   opacity: 0.3;
 }
 
-.checkbox:focus ~ .checkbox-label:before{
+.checkbox:focus ~ .checkbox-label:before {
   outline: 3px solid #83B3D3;
 }
 
@@ -1361,7 +1369,7 @@ opacity: 0.6;
   background: #FFFFFF url("/images/dot.svg") center center no-repeat;
 }
 
-.radio:checked ~ .radio-label:hover:before{
+.radio:checked ~ .radio-label:hover:before {
   opacity: 0.6;
 }
 
@@ -1369,7 +1377,7 @@ opacity: 0.6;
   opacity: 0.3;
 }
 
-.radio:checked ~ .radio-label:hover{
+.radio:checked ~ .radio-label:hover {
   opacity: 0.6;
 }
 
@@ -1377,7 +1385,7 @@ opacity: 0.6;
   opacity: 0.3;
 }
 
-.radio ~ .radio-label:hover:before{
+.radio ~ .radio-label:hover:before {
   opacity: 0.6;
 }
 
@@ -1385,7 +1393,7 @@ opacity: 0.6;
   opacity: 0.3;
 }
 
-.radio ~ .radio-label:hover{
+.radio ~ .radio-label:hover {
   opacity: 0.6;
 }
 
@@ -1393,7 +1401,7 @@ opacity: 0.6;
   opacity: 0.3;
 }
 
-.radio:focus ~ .radio-label:before{
+.radio:focus ~ .radio-label:before {
   outline: 3px solid #83B3D3;
 }
 
@@ -1453,6 +1461,7 @@ opacity: 0.6;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='11' viewBox='0 0 8 11' fill='none'%3E%3Cpath d='M6.91526 4.96875L2.16526 0.71875C1.91526 0.46875 1.41526 0.46875 1.04026 0.71875C0.665263 0.96875 0.790263 1.46875 1.04026 1.71875L5.16526 5.46875L1.16526 9.21875C0.915263 9.46875 0.915263 9.96875 1.16526 10.2188C1.16526 10.3438 1.54026 10.4688 1.66526 10.4688C1.79026 10.4688 2.04026 10.3438 2.16526 10.2188L6.91526 5.96875C7.29026 5.71875 7.29026 5.21875 6.91526 4.96875Z' fill='white'/%3E%3C/svg%3E");
 }
+
 .breadcrumbs-link:hover {
   opacity: 0.6;
   outline: none;
