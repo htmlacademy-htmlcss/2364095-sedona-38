@@ -57,6 +57,7 @@ body {
   display: inline-block;
   padding: 8px 50px;
   font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
@@ -524,11 +525,10 @@ ul {
 
 .filter-wrapper {
   display: flex;
-  gap: 8px;
+  gap: 70px;
 }
 
 .select-control {
-  margin-right: 70px;
   width: 292px;
   padding: 14px 20px;
   border-radius: 4px;
@@ -543,6 +543,7 @@ ul {
   font-weight: 400;
   line-height: 21px;
   color: #333333;
+  outline-offset: -2px;
 }
 
 .select-control:hover,
@@ -564,7 +565,10 @@ ul {
   margin: 0 auto;
   padding: 35px 70px 70px;
 }
-
+.view-mode {
+  display: flex;
+  gap: 8px;
+}
 .view-button {
   width: 48px;
   height: 48px;
@@ -573,6 +577,7 @@ ul {
   background-color: #FFFFFF;
   background-position: center center;
   background-repeat: no-repeat;
+  outline-offset: -2px;
 }
 
 .view-button:focus {
@@ -611,11 +616,10 @@ ul {
 
 .hotels-filter {
   display: flex;
-  gap: 70px;
 }
 
 .hotels-filter-group {
-  margin: 0;
+  margin: 0 70px 0 0;
   padding: 0;
   border: none;
 }
@@ -631,7 +635,7 @@ ul {
 .price {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  margin-left: 70px;
 }
 
 .pricechoise {
@@ -643,6 +647,9 @@ ul {
   position: relative;
 }
 
+.hotelstype-filter-group {
+  min-width: 150px;
+}
 .range-label {
   position: absolute;
   right: 20px;
@@ -724,7 +731,7 @@ label {
   border-radius: 4px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px 16px;
+  grid-gap: 16px 20px;
 }
 
 .hotel-card-image {
@@ -1416,7 +1423,7 @@ opacity: 0.6;
   left: 0;
   width: 20px;
   height: 20px;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: #FFFFFF;
   cursor: pointer;
   border: none;
