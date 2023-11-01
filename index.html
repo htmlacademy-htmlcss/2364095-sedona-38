@@ -13,7 +13,7 @@
   <nav class="main-nav">
     <ul class="main-nav-list">
       <li class="main-nav-list-item">
-        <a class="nav-link active" href="index.html">
+        <a class="nav-link active">
           Главная
         </a>
       </li>
@@ -23,7 +23,7 @@
         </a>
       </li>
       <li class="main-nav-list-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="catalog.html">
           Гостиницы
         </a>
       </li>
@@ -77,28 +77,28 @@
       заслуживающий большего!</p>
     <p class="sedona-description description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     <ul class="advantages-list">
-      <li class="advantages-item">
+      <li class="advantages-item advantages-item-1">
         <div class="advantages-item-wrapper">
           <h3 class="advantages-title header-3">Настоящий городок</h3>
-          <p class="advantages-description text">Седона - не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
+          <p class="advantages-description text">Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
         </div>
         <img class="photo" src="images/sedona-city-vew.jpg" alt="Городской пейзаж" width="800" height="385">
       </li>
-      <li class="advantages-item">
-        <h3 class="advantages-title header-3">Небольшая площадь</h3>
+      <li class="advantages-item advantages-item-2">
+        <h3 class="advantages-title header-3">Небольшая<br>площадь</h3>
         <p class="advantages-description text">Все достопримечательности<br>находятся очень близко</p>
       </li>
-      <li class="advantages-item">
-        <h3 class="advantages-title header-3">Красивая дорога</h3>
+      <li class="advantages-item advantages-item-3">
+        <h3 class="advantages-title header-3">Красивая<br>дорога</h3>
         <p class="advantages-description text">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
       </li>
-      <li class="advantages-item">
-        <h3 class="advantages-title header-3">Мало туристов</h3>
+      <li class="advantages-item advantages-item-4">
+        <h3 class="advantages-title header-3">Мало<br>туристов</h3>
         <p class="advantages-description text">Большинство едет в Гранд<br>Каньон и толпится там</p>
       </li>
-      <li class="advantages-item">
+      <li class="advantages-item advantages-item-5">
         <div class="advantages-item-wrapper">
-        <h3 class="advantages-title header-3">Там есть мост дьявола</h3>
+        <h3 class="advantages-title header-3">Там есть<br>мост дьявола</h3>
         <p class="advantages-description text">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
         </div>
           <img class="photo" src="images/devils-bridge-view.jpg" alt="Вид на Мост Дьявола" width="800" height="385">
@@ -107,20 +107,20 @@
   </section>
   <section class="features">
     <h2 class="visually-hidden">Преимущества предложения этого туроператора</h2>
-    <p class="features-list-title title">Приезжайте в Седону отдохнуть<br>в комфорте и уюте</p>
-    <p class="features-list-description description">Опытный персонал и качественное обслуживание</p>
+    <p class="features-list-title title">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</p>
+    <p class="features-list-description description">Опытный персонал и качественное обслуживание!</p>
     <ul class="features-list">
-      <li class="features-item">
+      <li class="features-item living">
         <h3 class="features-title header-3">Жильё</h3>
         <p class="features-description text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
       </li>
-      <li class="features-item">
+      <li class="features-item food">
         <h3 class="features-title header-3">Еда</h3>
         <p class="features-description text">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
       </li>
-      <li class="features-item">
+      <li class="features-item gifts">
         <h3 class="features-title header-3">Сувениры</h3>
-        <p class="features-description text">Не только китайского,<br>но и настоящего местного<br>производства</p>
+        <p class="features-description text">Не только китайского,<br>но и настоящего местного<br>производства!</p>
       </li>
     </ul>
   </section>
@@ -233,5 +233,92 @@
     </a>
   </section>
 </footer>
+
+<div class="modal visually-hidden">
+  <div class="modal-content">
+    <p class="title modal-title">Поиск гостиницы в Седоне</p>
+    <button class="modal-form-button-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"
+           aria-hidden="true">
+        <circle cx="26" cy="26" r="26" fill="#currentColor"/>
+        <path
+          d="M33.4905 20.7829L32.1982 19.4906L26.4905 25.1983L20.7828 19.4906L19.4905 20.7829L25.1982 26.4906L19.4905 32.1983L20.7828 33.4906L26.4905 27.7829L32.1982 33.4906L33.4905 32.1983L27.7828 26.4906L33.4905 20.7829Z"
+          fill="currentColor"/>
+      </svg>
+    </button>
+    <form class="modal-form" action="http://echo.htmlacademy.ru" method="post">
+      <label class="modal-form-label arrival-label">
+        Дата Заезда:
+        <input class="modal-form-input input-date" type="text" name="arrival-date" id="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
+        <p class="message error-message">Мы не можем отправить вас в прошлое.</p>
+      </label>
+      <label class="modal-form-label departure-label" for="departure-date">
+        Дата Выезда:
+        <input class="modal-form-input input-date" type="text" name="departure-date" id="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
+        <p class="message">На эти даты есть свободные номера. Пока есть.</p>
+      </label>
+      <label class="modal-form-label adults-label" for="adults">
+        Взрослые:
+        <div class="person-input-wrapper">
+          <button class="person-input-button person-input-less" type="button">
+            <span class="visually-hidden">Уменьшить</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 aria-hidden="true">
+              <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3"/>
+            </svg>
+          </button>
+          <input class="modal-form-input person-input" type="text" name="adults" pattern="\d*" id="adults" value="2">
+          <button class="person-input-button person-input-more" type="button">
+            <span class="visually-hidden">Увеличить</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 aria-hidden="true">
+              <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3"/>
+            </svg>
+          </button>
+        </div>
+      </label>
+      <label class="modal-form-label child-label" for="child">
+        <div class="popover-wrapper">
+          Дети:
+          <div class="popover">
+            <button class="popover-button" type="button">
+              <span class="visually-hidden">Информация</span>
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+              </svg>
+            </button>
+            <p class="popover-content">
+              Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+              размещаются
+              бесплатно.
+            </p>
+          </div>
+        </div>
+        <div class="person-input-wrapper">
+          <button class="person-input-button person-input-less" type="button">
+            <span class="visually-hidden">Уменьшить</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 aria-hidden="true">
+              <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3"/>
+            </svg>
+          </button>
+          <input class="modal-form-input person-input" type="text" name="child" pattern="\d*" id="child" value="2">
+          <button class="person-input-button person-input-more" type="button">
+            <span class="visually-hidden">Увеличить</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 aria-hidden="true">
+              <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3"/>
+            </svg>
+          </button>
+        </div>
+
+      </label>
+      <button class="button modal-form-button-submit" type="submit">Найти</button>
+    </form>
+  </div>
+</div>
+
 </body>
 </html>

@@ -23,7 +23,7 @@
         </a>
       </li>
       <li class="main-nav-list-item">
-        <a class="nav-link active" href="#">
+        <a class="nav-link active">
           Гостиницы
         </a>
       </li>
@@ -73,7 +73,9 @@
             Главная страница
           </span>
             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-              <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" fill="white"/>
+              <path
+                d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                fill="white"/>
               <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="currentColor"/>
             </svg>
           </a>
@@ -87,7 +89,7 @@
       <h2 class="visually-hidden hotel-search-title">Форма поиска отелей</h2>
       <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="hotels-filter-group hotelsfeatures-filter-group">
-          <legend class="hotels-filter-title">Инфраструктура</legend>
+          <legend class="hotels-filter-title">Инфраструктура:</legend>
           <ul class="filter-list hotelsfeatures-filter-list">
             <li class="hotelsfeatures-filter-item">
               <input class="control-input checkbox" type="checkbox" id="swimming-pool" name="swimming-pool" checked>
@@ -110,7 +112,7 @@
           </ul>
         </fieldset>
         <fieldset class="hotels-filter-group hotelstype-filter-group">
-          <legend class="hotels-filter-title">Тип жилья</legend>
+          <legend class="hotels-filter-title">Тип жилья:</legend>
           <ul class="filter-list hotelstype-filter-list">
             <li class="hotelstypeg-filter-item">
               <input class="control-input radio" type="radio" id="hotel" name="hoteltype" value="hotel" checked>
@@ -133,15 +135,17 @@
           </ul>
         </fieldset>
         <fieldset class="hotels-filter-group price">
-          <legend class="hotels-filter-title range pricechoise">Стоимость, ₽</legend>
+          <legend class="hotels-filter-title range pricechoise">Стоимость, ₽:</legend>
           <div class="pricechoise">
             <div class="range-wrapper">
               <label for="range-min" class="range-label">от</label>
-              <input type="text" id="range-min" name="range-min" class="range-input range-input-min" pattern="\d" value="0">
+              <input type="text" id="range-min" name="range-min" class="range-input range-input-min" pattern="\d"
+                     value="0">
             </div>
             <div class="range-wrapper">
               <label for="range-max" class="range-label">до</label>
-              <input type="text" id="range-max" name="range-max" class="range-input range-input-max" pattern="\d" value="9000">
+              <input type="text" id="range-max" name="range-max" class="range-input range-input-max" pattern="\d"
+                     value="9000">
             </div>
 
           </div>
@@ -149,8 +153,8 @@
             <div class="input-slider-total-range">
               <div class="input-slider-current-range"></div>
             </div>
-            <div class="input-slider-value input-slider-min-value"></div>
-            <div class="input-slider-value input-slider-max-value"></div>
+            <button class="input-slider-value input-slider-min-value" type="button"></button>
+            <button class="input-slider-value input-slider-max-value" type="button"></button>
           </div>
         </fieldset>
         <div class="button-set">
@@ -167,22 +171,24 @@
 
   <section class="catalog-hotels-founded">
     <div class="result-title-wrapper">
-    <h2 class="founded-title title">Найдено гостиниц: 38</h2>
+      <h2 class="founded-title title">Найдено гостиниц: 38</h2>
       <div class="filter-wrapper">
-    <select class="select-control" aria-label="Сортировка">
-      <option value="popular">Сначала популярные</option>
-      <option value="cheap" selected>Сначала дешёвые</option>
-      <option value="expensive">Сначала дорогие</option>
-    </select>
-    <a class="view-button grid-mode active" href="#" >
-      <span class="visually-hidden">Показать карточки</span>
-    </a>
-    <a class="view-button card-mode" href="#">
-      <span class="visually-hidden">Показать по одной</span>
-    </a>
-    <a class="view-button list-mode" href="#">
-      <span class="visually-hidden">Показать списком</span>
-    </a>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярные</option>
+          <option value="cheap" selected>Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <div class="view-mode">
+          <a class="view-button grid-mode active" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="view-button card-mode" href="#">
+            <span class="visually-hidden">Показать по одной</span>
+          </a>
+          <a class="view-button list-mode" href="#">
+            <span class="visually-hidden">Показать списком</span>
+          </a>
+        </div>
       </div>
     </div>
     <ul class="hotels-list">
@@ -198,11 +204,8 @@
         <span class="hotel-card-price">От 4000 ₽</span>
         <a class="more-card-button card-button button" href="#">Подробнее</a>
         <a class="fav-card-button card-button button" href="#">В избранное</a>
-        <div class="hotel-level-stars" aria-label="4 звезды">
-          <span class="hotel-level-star" aria-hidden="true"></span>
-          <span class="hotel-level-star" aria-hidden="true"></span>
-          <span class="hotel-level-star" aria-hidden="true"></span>
-          <span class="hotel-level-star" aria-hidden="true"></span>
+        <div class="hotel-level-stars hotel-level-stars-4">
+          <span class="visually-hidden">4 звезды</span>
         </div>
         <span class="hotel-rating">Рейтинг: 8,5</span>
       </li>
@@ -217,11 +220,8 @@
         <span class="hotel-card-price">От 5000 ₽</span>
         <a class="more-card-button button card-button" href="#">Подробнее</a>
         <a class="fav-card-button button card-button button-selected" href="#">В избранном</a>
-        <div class="hotel-level-stars" aria-label="4 звезды">
-          <span class="hotel-level-star" aria-hidden="true"></span>
-          <span class="hotel-level-star" aria-hidden="true"></span>
-          <span class="hotel-level-star" aria-hidden="true"></span>
-          <span class="hotel-level-star" aria-hidden="true"></span>
+        <div class="hotel-level-stars hotel-level-stars-4">
+          <span class="visually-hidden">4 звезды</span>
         </div>
         <span class="hotel-rating">Рейтинг: 9,2</span>
       </li>
@@ -239,10 +239,8 @@
         <span class="hotel-card-price">От 2500 ₽</span>
         <a class="more-card-button card-button button" href="#">Подробнее</a>
         <a class="fav-card-button card-button button" href="#">В избранное</a>
-        <div class="hotel-level-stars" aria-label="3 звезды">
-          <span class="hotel-level-star" aria-hidden="true"></span>
-          <span class="hotel-level-star" aria-hidden="true"></span>
-          <span class="hotel-level-star" aria-hidden="true"></span>
+        <div class="hotel-level-stars hotel-level-stars-3">
+          <span class="visually-hidden">3 звезды</span>
         </div>
         <span class="hotel-rating">Рейтинг: 6,9</span>
       </li>
@@ -258,9 +256,8 @@
         <span class="hotel-card-price">От 1500 ₽</span>
         <a class="more-card-button card-button button" href="#">Подробнее</a>
         <a class="fav-card-button card-button button" href="#">В избранное</a>
-        <div class="hotel-level-stars" aria-label="2 звезды">
-          <span class="hotel-level-star" aria-hidden="true"></span>
-          <span class="hotel-level-star" aria-hidden="true"></span>
+        <div class="hotel-level-stars hotel-level-stars-2">
+          <span class="visually-hidden">2 звезды</span>
         </div>
         <span class="hotel-rating">Рейтинг: 5,0</span>
       </li>
