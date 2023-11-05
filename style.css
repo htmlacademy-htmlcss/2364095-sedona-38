@@ -14,7 +14,9 @@
   src: url(./fonts/ptsans-700.woff2) format('woff2');
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -30,6 +32,12 @@ body {
   color: #333333;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -39,6 +47,11 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.link {
+  text-decoration: none;
+  color: #000000;
 }
 
 .title {
@@ -141,10 +154,10 @@ body {
 }
 
 .hero-block-banner {
+  background-color: #4089B9;
   background-image: url("images/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #82B3D3;
   padding-top: 51px;
   padding-bottom: 82px;
 }
@@ -454,11 +467,6 @@ body {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
 .social-media-item-link {
   color: #83B3D3;
 }
@@ -509,7 +517,7 @@ a {
   opacity: 0.3;
 }
 
-ul {
+.list {
   list-style-type: none;
 }
 
