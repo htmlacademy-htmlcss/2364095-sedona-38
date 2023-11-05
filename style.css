@@ -548,6 +548,7 @@ ul {
   line-height: 21px;
   color: #333333;
   outline-offset: -2px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .select-control:hover,
@@ -1263,6 +1264,9 @@ label {
 
 .nav-button {
   margin-left: 20px;
+  padding: 8px 12px;
+  min-width: 160px;
+  min-height: 36px;
 }
 
 .fav-link {
