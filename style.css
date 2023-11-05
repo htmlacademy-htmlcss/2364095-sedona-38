@@ -710,7 +710,7 @@ img {
   gap: 32px;
 }
 
-label {
+.label {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
